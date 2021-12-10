@@ -67,17 +67,13 @@
 
       <div class="card">
         <div class="card-content">
-       <p>"hide".</p>
-       <script>
-var myVar;
-
-function myFunction() {
-  myVar = setTimeout(alertFunc, 3000);
-}
-
-function alertFunc() {
-  alert("Hello!");
-}
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("*").hide(3);
+  });
+});
 </script>
           <p class="title">
             “There are two hard things in computer science: cache invalidation,
